@@ -10,7 +10,6 @@ public static class FooBar{
 	public static string fooBarNum = "";
 	public static void DeretFooBar(int index){
 		for(int i = 1; i < index; i++){
-            
 			fooBarRow += NumToFooBar(i) + ", ";
 		fooBarRow += NumToFooBar(index);
 		}
@@ -28,7 +27,7 @@ public static class FooBar{
         else{
             fooBarNum = num.ToString();
         }
-        return fooBarNum;
+        return fooBarNum
     }
 	Console.WriteLine(fooBarRow);
 }
