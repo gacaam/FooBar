@@ -11,8 +11,9 @@ public static class FooBar{
 	public static void DeretFooBar(int index){
 		for(int i = 1; i < index; i++){
 			fooBarRow += NumToFooBar(i) + ", ";
-		fooBarRow += NumToFooBar(index);
 		}
+		fooBarRow += NumToFooBar(index);
+		Console.WriteLine(fooBarRow);
     }
     public static string NumToFooBar(int num){
         if(num % 3 == 0 && num % 5 != 0){
@@ -27,7 +28,6 @@ public static class FooBar{
         else{
             fooBarNum = num.ToString();
         }
-        return fooBarNum
+        return fooBarNum;
     }
-	Console.WriteLine(fooBarRow);
 }
