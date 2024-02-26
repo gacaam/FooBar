@@ -6,10 +6,10 @@
 }
 
 public static class FooBar{
-	public static string fooBarRow = "0, ";
+	public static string fooBarRow = "";
 	public static string fooBarNum = "";
 	public static void DeretFooBar(int index){
-		for(int i = 1; i < index; i++){
+		for(int i = 0; i < index; i++){
 			fooBarRow += NumToFooBar(i) + ", ";
 		}
 		fooBarRow += NumToFooBar(index);
@@ -22,7 +22,7 @@ public static class FooBar{
         else if(num % 3 != 0 && num % 5 == 0){
             fooBarNum = "bar";
         }
-        else if(num % 3 == 0 && num % 5 == 0){
+        else if(num % 3 == 0 && num % 5 == 0 && num != 0){
             fooBarNum = "foobar"; 
         }
         else{
