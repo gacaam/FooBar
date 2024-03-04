@@ -1,12 +1,12 @@
 namespace FooBar;
 
 public interface IFooBar{
-    public string DeretFooBar(int index);
+    public string BarisFooBar(int index);
 }
 public class FooBarMaker : IFooBar{
 	public string fooBarRow = "";
 	public string fooBarNum = "";
-	public string DeretFooBar(int index){
+	public string BarisFooBar(int index){
 		for(int i = 0; i < index; i++){
 			fooBarRow += NumToFooBar(i) + ", ";
 		}
