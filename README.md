@@ -1,4 +1,4 @@
-#FooBar
+# FooBar
 Simple implementation of a FooBar program in C# language. 
 
 The FooBarMaker class in namespace FooBar creates a row of numbers, "foo", "bar", and "foobar" based on user input.
