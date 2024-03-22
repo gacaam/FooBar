@@ -14,18 +14,17 @@ public class FooBarMaker : IFooBar{
         return fooBarRow;
     }
     public virtual string NumToFooBar(int num){
-        if(num % 3 == 0 && num % 5 != 0){
-            fooBarNum = "foo";
+        string fooBarString = "";
+        if(num % 3 == 0 && num != 0){
+            fooBarString += "foo";
+            if(num % 5 == 0){
+                fooBarString += "bar";
+            }
+        }else if(num % 5 == 0 && num != 0){
+            fooBarString += "bar";
+        }else{
+            fooBarString = num.ToString();
         }
-        else if(num % 3 != 0 && num % 5 == 0){
-            fooBarNum = "bar";
-        }
-        else if(num % 3 == 0 && num % 5 == 0 && num != 0){
-            fooBarNum = "foobar"; 
-        }
-        else{
-            fooBarNum = num.ToString();
-        }
-        return fooBarNum;
+        return fooBarString;
     }
 }
