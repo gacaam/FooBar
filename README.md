@@ -1,7 +1,6 @@
-# FooBar
-Simple implementation of a FooBar program in C# language. 
+FooBar Program in C#
+Welcome to the FooBar Program! This repository contains a simple implementation of a FooBar program written in C#. The program generates a sequence of numbers and replaces specific indexes with "foo", "bar", or "foobar" based on the following rules:
 
-The FooBarMaker class in namespace FooBar creates a row of numbers, "foo", "bar", and "foobar" based on user input.
-1. Indexes only divisble by 3 returns "foo"
-2. Indexes only divisble by 5 returns "bar"
-3. Indexes divisible by both 3 and 5 other than 0 returns "foobar"
+Indexes divisible by 3: Returns "foo"
+Indexes divisible by 5: Returns "bar"
+Indexes divisible by both 3 and 5: Returns "foobar" (excluding index 0)
